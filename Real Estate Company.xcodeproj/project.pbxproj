@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDA61CBA2721BB6D000765FD /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = EDA61CB92721BB6D000765FD /* main.c */; };
+		EDA61CC92721BBFD000765FD /* RealEstateMain.c in Sources */ = {isa = PBXBuildFile; fileRef = EDA61CC72721BBFD000765FD /* RealEstateMain.c */; };
+		EDA61CCC2721BFAC000765FD /* HouseCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = EDA61CCB2721BFAC000765FD /* HouseCommon.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		EDA61CB62721BB6D000765FD /* Real Estate Company */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Real Estate Company"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDA61CB92721BB6D000765FD /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		EDA61CC72721BBFD000765FD /* RealEstateMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RealEstateMain.c; sourceTree = "<group>"; };
+		EDA61CCA2721BFAC000765FD /* HouseCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HouseCommon.h; sourceTree = "<group>"; };
+		EDA61CCB2721BFAC000765FD /* HouseCommon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HouseCommon.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		EDA61CB82721BB6D000765FD /* Real Estate Company */ = {
 			isa = PBXGroup;
 			children = (
-				EDA61CB92721BB6D000765FD /* main.c */,
+				EDA61CC72721BBFD000765FD /* RealEstateMain.c */,
+				EDA61CCA2721BFAC000765FD /* HouseCommon.h */,
+				EDA61CCB2721BFAC000765FD /* HouseCommon.c */,
 			);
 			path = "Real Estate Company";
 			sourceTree = "<group>";
@@ -118,7 +123,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA61CBA2721BB6D000765FD /* main.c in Sources */,
+				EDA61CC92721BBFD000765FD /* RealEstateMain.c in Sources */,
+				EDA61CCC2721BFAC000765FD /* HouseCommon.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
