@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EDA61CC92721BBFD000765FD /* RealEstateMain.c in Sources */ = {isa = PBXBuildFile; fileRef = EDA61CC72721BBFD000765FD /* RealEstateMain.c */; };
-		EDA61CCC2721BFAC000765FD /* HouseCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = EDA61CCB2721BFAC000765FD /* HouseCommon.c */; };
+		EDA61CCC2721BFAC000765FD /* RealEstateCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = EDA61CCB2721BFAC000765FD /* RealEstateCommon.c */; };
+		EDA61CCF2721C88E000765FD /* Property.c in Sources */ = {isa = PBXBuildFile; fileRef = EDA61CCE2721C88E000765FD /* Property.c */; };
+		EDA61CD22721CA43000765FD /* RealEstateCompany.c in Sources */ = {isa = PBXBuildFile; fileRef = EDA61CD12721CA43000765FD /* RealEstateCompany.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +28,12 @@
 /* Begin PBXFileReference section */
 		EDA61CB62721BB6D000765FD /* Real Estate Company */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Real Estate Company"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA61CC72721BBFD000765FD /* RealEstateMain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RealEstateMain.c; sourceTree = "<group>"; };
-		EDA61CCA2721BFAC000765FD /* HouseCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HouseCommon.h; sourceTree = "<group>"; };
-		EDA61CCB2721BFAC000765FD /* HouseCommon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HouseCommon.c; sourceTree = "<group>"; };
+		EDA61CCA2721BFAC000765FD /* RealEstateCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealEstateCommon.h; sourceTree = "<group>"; };
+		EDA61CCB2721BFAC000765FD /* RealEstateCommon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RealEstateCommon.c; sourceTree = "<group>"; };
+		EDA61CCD2721C88E000765FD /* Property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Property.h; sourceTree = "<group>"; };
+		EDA61CCE2721C88E000765FD /* Property.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Property.c; sourceTree = "<group>"; };
+		EDA61CD02721CA43000765FD /* RealEstateCompany.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealEstateCompany.h; sourceTree = "<group>"; };
+		EDA61CD12721CA43000765FD /* RealEstateCompany.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RealEstateCompany.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				EDA61CC72721BBFD000765FD /* RealEstateMain.c */,
-				EDA61CCA2721BFAC000765FD /* HouseCommon.h */,
-				EDA61CCB2721BFAC000765FD /* HouseCommon.c */,
+				EDA61CCA2721BFAC000765FD /* RealEstateCommon.h */,
+				EDA61CCD2721C88E000765FD /* Property.h */,
+				EDA61CD02721CA43000765FD /* RealEstateCompany.h */,
+				EDA61CD12721CA43000765FD /* RealEstateCompany.c */,
+				EDA61CCE2721C88E000765FD /* Property.c */,
+				EDA61CCB2721BFAC000765FD /* RealEstateCommon.c */,
 			);
 			path = "Real Estate Company";
 			sourceTree = "<group>";
@@ -123,8 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA61CCF2721C88E000765FD /* Property.c in Sources */,
+				EDA61CD22721CA43000765FD /* RealEstateCompany.c in Sources */,
 				EDA61CC92721BBFD000765FD /* RealEstateMain.c in Sources */,
-				EDA61CCC2721BFAC000765FD /* HouseCommon.c in Sources */,
+				EDA61CCC2721BFAC000765FD /* RealEstateCommon.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
