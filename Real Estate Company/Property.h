@@ -1,22 +1,28 @@
 //
-//  Property.h
+//  Property.h - declarations for different property types: Apartment, Townhouse, SemiDetachedHouse
 //  Real Estate Company
 //
-//  Created by Dayson Dong on 2021-10-21.
+//  Created by Yiyuan Dong on 2021-10-21.
 //
 
 #ifndef Property_h
 #define Property_h
 
-#include "RealEstateCommon.h"
+#include "PropertyCommon.h"
+
+// MARK: - Types of properties: Apartment: apt, Townhouse: th, Semi-Detached House: semi
+
+enum propertyTypes {apt = 0,
+                    th = 1,
+                    semi = 2 };
 
 //MARK: -DECLARATIONS FOR APARTMENT
 
 typedef struct{
+    //Common: sturct of charateristics shared by differernt types of properties
+    PropertyCommon common;
     
-    RealEstateCommon common;
     double monthlyCondoFees;
-    
     
 } Apartment;
 
@@ -27,8 +33,8 @@ void CalculateApartmentMonthlyEarnings(Apartment * apt);
 //MARK: -DECLARATIONS FOR TOWNHOUSE
 
 typedef struct{
-    
-    RealEstateCommon common;
+    //Common: sturct of charateristics shared by differernt types of properties
+    PropertyCommon common;
     
     double monthlyUtilities;
     double monthlyCondoFees;
@@ -43,8 +49,8 @@ void CalculateTownhouseMonthlyEarnings(Townhouse * th);
 //MARK: -DECLARATIONS FOR SEMIDETACHEDHOUSE
 
 typedef struct{
-    
-    RealEstateCommon common;
+    //Common: sturct of charateristics shared by differernt types of properties
+    PropertyCommon common;
     
     double monthlyUtilities;
     double monthlyPropertyTax;
