@@ -25,12 +25,12 @@ int main(void) {
     if (ret == -1) printf("Files not found. Program aborting...\n");
     
     else {
-        //Calaulate earnings, current values and capital gains for each apartment, townhouse and semi-detached house
+        //Calaulate earnings, current values and capital gains for each property
         AnalyzePropertiesForCompany(&company);
-       //Sum up the earnings, current values and capital gains for each type of property
+        //Sum up the earnings, current values and capital gains for each type of property
         CalculatePerformance(&company);
         //Print out breif report
-        ShowPerformance(company);
+        ShowPerformance(&company);
     }
 
     return ret;
