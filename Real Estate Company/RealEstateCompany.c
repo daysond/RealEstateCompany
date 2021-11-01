@@ -112,7 +112,7 @@ void CalculatePerformance(RealEstateCompany *company) {
 //Print out the performance for each property type
 void ShowPerformance(const RealEstateCompany *company) {
     
-    printf("The following are financial stats for %s, %s.\n\n", (*company).name, (*company).address);
+    printf("The following are financial stats for %s, %s.\n\n", company->name, company->address);
     
     for(int i = 0; i < NUM_PROPERTY_TYPES; i++) {
         
@@ -122,7 +122,7 @@ void ShowPerformance(const RealEstateCompany *company) {
         else if (i == th ) strcpy(type,"townhouses");
         else if (i == semi) strcpy(type ,"semidetached houses");
         
-        printf("For the %s, the monthly earnings are $%.2lf, the roi is %.2lf%%, the total value is $%.2lf and the capital gains are $%.2lf\n\n", type, (*company).sumOfMonthlyEarnings[i], (*company).sumOfROI[i], (*company).sumOfCurrentValue[i], (*company).sumOfCapitalGains[i]);
+        printf("For the %s, the monthly earnings are $%.2lf, the roi is %.2lf%%, the total value is $%.2lf and the capital gains are $%.2lf\n\n", type, company->sumOfMonthlyEarnings[i], company->sumOfROI[i], company->sumOfCurrentValue[i], company->sumOfCapitalGains[i]);
     }
     
 }
