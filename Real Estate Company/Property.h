@@ -26,7 +26,7 @@ typedef struct{
     
 } Apartment;
 
-void CalculateApartmentMonthlyEarnings(Apartment * apt);
+void CalculateApartmentMonthlyEarnings(Apartment *apt);
 
 
 
@@ -42,7 +42,7 @@ typedef struct{
     
 } Townhouse;
 
-void CalculateTownhouseMonthlyEarnings(Townhouse * th);
+void CalculateTownhouseMonthlyEarnings(Townhouse *th);
 
 
 
@@ -57,7 +57,7 @@ typedef struct{
     
 } SemiDetachedHouse;
 
-void CalculateSemiDetachedMonthlyEarnings(SemiDetachedHouse * semi);
+void CalculateSemiDetachedMonthlyEarnings(SemiDetachedHouse *semi);
 
 
 #endif /* Property_h */

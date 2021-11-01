@@ -22,11 +22,11 @@ int main(void) {
     ret = initCompanyData(&company);
     
     // error code is -1, files not found. Program will abort.
-    if (ret == -1) printf("Invalid file. Program aborting...\n");
+    if (ret == -1) printf("Files not found. Program aborting...\n");
     
     else {
         //Calaulate earnings, current values and capital gains for each apartment, townhouse and semi-detached house
-        analyzePropertiesForCompany(&company);
+        AnalyzePropertiesForCompany(&company);
        //Sum up the earnings, current values and capital gains for each type of property
         CalculatePerformance(&company);
         //Print out breif report
