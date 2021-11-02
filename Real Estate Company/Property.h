@@ -46,7 +46,7 @@ void CalculateTownhouseMonthlyEarnings(Townhouse *th);
 
 
 
-//MARK: -DECLARATIONS FOR SEMIDETACHEDHOUSE
+//MARK: -DECLARATIONS FOR SEMIDETACHED HOUSE
 
 typedef struct{
     //Common: sturct of charateristics shared by differernt types of properties

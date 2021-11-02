@@ -10,8 +10,9 @@
 
 #define NUM_PROPERTY 5
 #define NUM_PROPERTY_TYPES 3
-#include "Property.h"
 
+#include "Property.h"
+#include <string.h>
 
 typedef struct {
     
@@ -38,7 +39,7 @@ void SumCurrentValue(RealEstateCompany *company);
 void SumCapitalGains(RealEstateCompany *company);
 
 //Fcuntion that calculates earnings, ROI, current value and captital gains for EACH and ALL of the properties that the company owns.
-void AnalyzePropertiesForCompany(RealEstateCompany *company);
+void AnalyzeProperties(RealEstateCompany *company);
 
 //Funtion that excutes the sum functions, sum up the earnings, ROI, current value and captital gains for each TYPE of properties that the company owns
 void CalculatePerformance(RealEstateCompany *company);

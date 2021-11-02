@@ -32,7 +32,7 @@ void CalculateROI(PropertyCommon *common);
 void CalculatecurrentValue(PropertyCommon *common);
 void CalculateCapitalGains(PropertyCommon *common);
 
-//Master function that execute the above 3 functions (calculate ROI, Current Value and Capital Gains)
-void AnalyzeProperty(PropertyCommon *common);
+//Master function that executes the above 3 functions (calculate ROI, Current Value and Capital Gains)
+void AnalyzePropertyData(PropertyCommon *common);
 
 #endif /* PropertyCommon */

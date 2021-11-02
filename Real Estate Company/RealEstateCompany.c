@@ -6,7 +6,6 @@
 //
 
 #include "RealEstateCompany.h"
-#include <string.h>
 
 //Note: apartment: apt->0 townhouse: th->1 semi-detached house: semi->2
 
@@ -57,7 +56,7 @@ void SumCapitalGains(RealEstateCompany *company) {
 }
 
 //Calaulate earnings, current values and capital gains for each apartment, townhouse and semi-detached house
-void AnalyzePropertiesForCompany(RealEstateCompany *company) {
+void AnalyzeProperties(RealEstateCompany *company) {
     
     for(int j = 0; j < NUM_PROPERTY_TYPES; j++) {
 
@@ -68,21 +67,21 @@ void AnalyzePropertiesForCompany(RealEstateCompany *company) {
                 case apt: //0, apartment
 
                     CalculateApartmentMonthlyEarnings(&company->apartments[i]);
-                    AnalyzeProperty(&company->apartments[i].common);
+                    AnalyzePropertyData(&company->apartments[i].common);
                     
                     break;
                     
                 case th: //1, townhouse
                     
                     CalculateTownhouseMonthlyEarnings(&company->townhouses[i]);
-                    AnalyzeProperty(&company->townhouses[i].common);
+                    AnalyzePropertyData(&company->townhouses[i].common);
                     
                     break;
                     
                 case semi://2, semi-detached house
     
                     CalculateSemiDetachedMonthlyEarnings(&company->semiDetached[i]);
-                    AnalyzeProperty(&company->semiDetached[i].common);
+                    AnalyzePropertyData(&company->semiDetached[i].common);
                     
                     break;
                     

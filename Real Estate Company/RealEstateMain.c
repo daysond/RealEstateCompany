@@ -7,7 +7,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
-#include <string.h>
 #include "RealEstateCompany.h"
 
 int initCompanyData(RealEstateCompany *company);
@@ -26,10 +25,10 @@ int main(void) {
     
     else {
         //Calaulate earnings, current values and capital gains for each property
-        AnalyzePropertiesForCompany(&company);
+        AnalyzeProperties(&company);
         //Sum up the earnings, current values and capital gains for each type of property
         CalculatePerformance(&company);
-        //Print out breif report
+        //Print out a  breif report
         ShowPerformance(&company);
     }
 
