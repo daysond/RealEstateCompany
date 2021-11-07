@@ -9,11 +9,11 @@
 
 //Calculate the return on invesement in %
 void CalculateROI(PropertyCommon *common){
-    
+
     //ROI = 100 x 12 x monthly earnings / purchase price.
-    common->annualReturn = (100.0 * 12.0 * common->monthlyEarning) / common->purchasePrice != 0 ?  common->purchasePrice : 1.0;
+    common->annualReturn = (100.0 * 12.0 * common->monthlyEarning) / (common->purchasePrice != 0 ?  common->purchasePrice : 1.0);
     //In case of invalid purchase price, price = 0
-    
+
 }
 
 //Calculate the current value of property, make sure that monthlyEarning is calculated first before calling this function

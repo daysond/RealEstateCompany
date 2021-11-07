@@ -103,7 +103,7 @@
 		EDA61CAE2721BB6D000765FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					EDA61CB52721BB6D000765FD = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -257,6 +257,7 @@
 		EDA61CBE2721BB6D000765FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2VZ8N8LJC;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -267,6 +268,7 @@
 		EDA61CBF2721BB6D000765FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2VZ8N8LJC;
 				ENABLE_HARDENED_RUNTIME = YES;
