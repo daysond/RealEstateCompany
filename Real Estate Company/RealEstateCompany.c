@@ -24,12 +24,34 @@ void SumMonthlyEarnings(RealEstateCompany *company) {
 //Sum up the ROI for each apartment, townhouse and semi-detached house.
 void SumReturnOnInvestment(RealEstateCompany *company) {
     
-    for(int i = 0; i < NUM_PROPERTY; i++) {
+    double runningTotal;
+    
+    for (int i = 0; i < NUM_PROPERTY_TYPES; i++) {
         
-        company->sumOfROI[apt] += company->apartments[i].common.annualReturn;
-        company->sumOfROI[th] += company->townhouses[i].common.annualReturn;
-        company->sumOfROI[semi] += company->semiDetached[i].common.annualReturn;
+        runningTotal = 0;
         
+        for (int j = 0; j < NUM_PROPERTY; j++) {
+            
+            switch (i) {
+                case apt:
+                    runningTotal += company->apartments[j].common.purchasePrice;
+                    break;
+                case th:
+                    runningTotal += company->townhouses[j].common.purchasePrice;
+                    break;
+                case semi:
+                    runningTotal += company->semiDetached[j].common.purchasePrice;
+                    break;;
+                default:
+                    break;
+            }
+
+        }
+        
+        if (i == apt) company->sumOfROI[apt] = (100 * 12 * company->sumOfMonthlyEarnings[apt] / runningTotal);
+        else if (i == th )  company->sumOfROI[th] = (100 * 12 * company->sumOfMonthlyEarnings[th] / runningTotal);
+        else if(i == semi)  company->sumOfROI[semi] = (100 * 12 * company->sumOfMonthlyEarnings[semi] / runningTotal);
+
     }
 }
 
